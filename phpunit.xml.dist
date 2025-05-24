@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="vendor/autoload.php"
+         colors="true"
+         verbose="true">
+    <testsuites>
+        <testsuite name="App Test Suite">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+    <php>
+        <!-- Define DB constants for a test database if possible -->
+        <!-- Assure-toi que config.php peut utiliser ces variables d'environnement -->
+        <!-- <env name="DB_HOST" value="localhost_test"/> -->
+        <!-- <env name="DB_NAME" value="test_db_name"/> -->
+        <!-- <env name="DB_USER" value="test_db_user"/> -->
+        <!-- <env name="DB_PASS" value="test_db_pass"/> -->
+        <!-- <env name="APP_ENV" value="test"/> --> <!-- Pour que config.php sache qu'on est en test -->
+    </php>
+</phpunit>
